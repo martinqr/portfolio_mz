@@ -1,0 +1,166 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+body {
+  background: #1e1e1e;
+}
+
+header {
+}
+
+main {
+}
+
+footer {
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.menuContainer {
+  grid-area: menuContainer;
+  display: grid;
+  grid-template-areas:
+    "navTitle1"
+    "navTitle2"
+    "navSocial";
+  grid-template-columns: 127px 77px 116px;
+  grid-template-rows: 48px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navTitle1 {
+  grid-area: navTitle1;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.navTitle2 {
+  grid-area: navTitle2;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.navSocial {
+  grid-area: navSocial;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+.presentationContainer {
+}
+.presentationBanner {
+}
+.presentationTitle {
+}
+.presentationDescr {
+}
+.presentationImg {
+}
+
+.workContainer {
+}
+.workTitle {
+}
+.workDescr {
+}
+.workPort {
+}
+
+.bioContainer {
+}
+.bioTitle {
+}
+.bioYear {
+}
+.bioDescr {
+}
+
+.socialContainer {
+}
+.socialTitle {
+}
+.socialIcon {
+}
+.socialDescr {
+}
+
+.portfolioContainer {
+}
+.project1Container {
+}
+.project1Img {
+}
+.project1Title {
+}
+.project1Descr {
+}
+
+.project2Container {
+}
+.project2Img {
+}
+.project2Title {
+}
+.project2Descr {
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.copyrightContainer {
+}
+
+.copyrightTitle {
+}
