@@ -38,7 +38,7 @@ input[type="reset"] {
   grid-template-areas:
     "headerContainer"
     "mainContainer"
-    "foooterContainer";
+    "footerContainer";
   grid-template-columns: 100%;
   grid-template-rows: auto;
   justify-content: center;
@@ -58,13 +58,17 @@ input[type="reset"] {
   display: grid;
   grid-template-areas:
     "presentationContainer"
-    "workContainer";
-    row-gap: 40px;
+    "roadContainer"
+    "bioContainer"
+    "worksContainer";
+  row-gap: 40px;
 }
 
 .footerContainer {
-  display: grid;
   grid-area: footerContainer;
+  display: grid;
+  grid-template-areas:
+  "copyrightContainer";
 }
 
 /*--------------------------------------------------------------
@@ -180,23 +184,23 @@ input[type="reset"] {
   justify-content: center;
 }
 
-.workContainer {
-  grid-area: workContainer;
+.roadContainer {
+  grid-area: roadContainer;
   display: grid;
   grid-template-areas:
-    "workTitle"
-    "workDescr"
-    "workResume";
+    "roadTitle"
+    "roadDescr"
+    "roadResume";
   grid-template-columns: 270px;
-  grid-template-rows: 16px 140px 40px;
+  grid-template-rows: 16px auto 40px;
   row-gap: 12px;
   justify-content: center;
   justify-items: center;
   align-items: center;
   width: 100%;
 }
-.workTitle {
-  grid-area: workTitle;
+.roadTitle {
+  grid-area: roadTitle;
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -208,19 +212,19 @@ input[type="reset"] {
   color: #ffffff;
   width: 100%;
 }
-.workDescr {
-  grid-area: workDescr;
+.roadDescr {
+  grid-area: roadDescr;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 18px;
   display: flex;
   align-items: center;
   color: #ffffff;
 }
-.workResume a {
-  grid-area: workResume;
+.roadResume a {
+  grid-area: roadResume;
   background: #c2c2c2;
   height: 40px;
   border-radius: 12px;
@@ -238,41 +242,175 @@ input[type="reset"] {
 }
 
 .bioContainer {
+  grid-area: bioContainer;
+  display: grid;
+  grid-template-areas:
+    "bioTitle"
+    "bioYear"
+    "bioDescr";
+  grid-template-columns: 270px;
+  grid-template-rows: auto auto auto;
+  row-gap: 12px;
+  column-gap: 12px;
+  justify-content: center;
+  justify-items: start;
+  align-items: center;
+  width: 100%;
 }
 .bioTitle {
+  grid-area: bioTitle;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: #ffffff;
+  width: 100%;
 }
 .bioYear {
+  grid-area: bioYear;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
 .bioDescr {
+  grid-area: bioDescr;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
 
-.socialContainer {
-}
-.socialTitle {
-}
-.socialIcon {
-}
-.socialDescr {
+.worksContainer {
+  grid-area: worksContainer;
+  display: grid;
+  grid-template-areas:
+    "project1Container"
+    "project2Container";
+  grid-template-columns: 270px;
+  grid-template-rows: auto;
+  row-gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 
-.portfolioContainer {
+.worksTitle {
+  grid-area: worksTitle;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: #ffffff;
+  width: 100%;
 }
+
 .project1Container {
+  grid-area: project1Container;
+  display: grid;
+  grid-template-areas:
+    "worksTitle"
+    "project1Img"
+    "project1Title"
+    "project1Descr";
+  grid-template-columns: 270px;
+  grid-template-rows: auto;
+  row-gap: 12px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 .project1Img {
+  grid-area: project1Img;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project1Title {
+  grid-area: project1Title;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
 }
 .project1Descr {
+  grid-area: project1Descr;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
 
 .project2Container {
+  grid-area: project2Container;
+  display: grid;
+  grid-template-areas:
+    "project2Img"
+    "project2Title"
+    "project2Descr";
+  grid-template-columns: 270px;
+  grid-template-rows: auto;
+  row-gap: 12px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 .project2Img {
+  grid-area: project2Img;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project2Title {
+  grid-area: project2Title;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
 }
 .project2Descr {
+  grid-area: project2Descr;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -280,7 +418,25 @@ input[type="reset"] {
 --------------------------------------------------------------*/
 
 .copyrightContainer {
+  grid-area: copyrightContainer;
+  display: grid;
+  grid-template-areas: "copyrightTitle";
+  grid-template-columns: 270px;
+  grid-template-rows: auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 
 .copyrightTitle {
+  grid-area: copyrightTitle;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #b4b2b2;
 }
